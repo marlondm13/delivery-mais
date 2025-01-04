@@ -1,7 +1,7 @@
 function Produto(){
     return <>
-        <b>Produto xxxx</b> <br />
-        Descrição xxx xxxx xxxx
+        <b>Produto Teste</b> <br />
+        Descrição Teste
     </>
 }
 

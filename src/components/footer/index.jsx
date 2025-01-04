@@ -1,5 +1,5 @@
 function Footer(){
-    return <p>Rodapé...</p>
+    return <p>Rodapé</p>
 }
 
 export default Footer;
