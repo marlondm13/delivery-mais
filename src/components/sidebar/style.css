@@ -1,18 +1,18 @@
-.siderbar h5{
-    height: 30px;
-    margin-bottom: 0px;
+.siderbar h5 {
+  height: 30px;
+  margin-bottom: 0px;
 }
 
-.siderbar .footer{
-    height: 295px;
+.footer {
+  height: 265px;
 }
 
-.siderbar .produtos{
-    height: calc(100% - 295px);
-    overflow: auto;
-    align-content: flex-start;
+.produtos {
+  height: calc(100% - 295px);
+  overflow: auto;
+  align-content: flex-start;
 }
 
-.btn-pedido{
-    height: 80px;
+.btn-pedido {
+  height: 50px;
 }

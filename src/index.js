@@ -9,8 +9,7 @@ root.render(
     <>
       <Sidebar />    
       <Home />  
-    </>
-       
+    </>         
 );
 
 
