@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar";
 import Categoria from "../../components/categoria";
 import Banner from "../../components/banner";
 import Estabelecimento from "../../components/estabelecimento";
+import Footer from "../../components/footer";
 
 function Home() {
   return (
@@ -43,6 +44,8 @@ function Home() {
             </div>
           );
         })}
+
+        <Footer/>
         
       </div>
     </>
