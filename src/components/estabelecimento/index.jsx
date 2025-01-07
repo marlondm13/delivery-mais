@@ -19,8 +19,11 @@ function Estabelecimento(props) {
               <span> {props.avaliacao} - {props.categoria} </span>
             </div>
 
-          </div>
+            {props.btnRemoverFavorito ? 
+              <button className="btn btn-sm btn-outline-danger mt-2">Remover</button> 
+              : null}
 
+          </div>
         </div>
       </a>
     </div>

@@ -1,15 +1,23 @@
 import "./style.css";
 import {Dock} from "react-dock";
 import Produto from "../produto/sacola";
+import { useEffect, useState } from "react";
 
 function Sidebar() {
-  const show = true;
+
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('openSidebar', () => {
+      setShow(true);
+    });
+  }, []);
 
   return (
     <Dock position="right"
           isVisible={show}
           onVisibleChange={(visible) => {
-            show = visible;
+            setShow(visible);
           }}>
           
       <div className="container-fluid h-100 pt-4 sidebar">

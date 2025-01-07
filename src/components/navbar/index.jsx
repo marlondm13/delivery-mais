@@ -2,6 +2,12 @@ import Logo from "../../assets/logo.png";
 import "./style.css";
 
 function Navbar(){
+
+    function openSideBar(){
+        const event = new CustomEvent('openSidebar');
+        window.dispatchEvent(event);
+    };
+
     return <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light ps-3 pe-3">
         <div className="container-fluid">
 
@@ -39,7 +45,7 @@ function Navbar(){
                         </ul>
                     </div>
 
-                    <button className="btn btn-outline-danger me-3"> <i className="fas fa-shopping-bag"></i> Sacola </button>
+                    <button onClick={openSideBar} className="btn btn-outline-danger me-3"> <i className="fas fa-shopping-bag"></i> Sacola </button>
                 </div>
             </div>
         </div>
