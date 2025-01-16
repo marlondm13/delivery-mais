@@ -8,6 +8,7 @@ import Enderecos from './pages/enderecos';
 import Pedidos from './pages/pedidos';
 import Cardapio from './pages/cardapio';
 import Login from './pages/login';
+import Cadastro from './pages/cadastro';
 
 function Rotas(){
     return <>
@@ -20,9 +21,12 @@ function Rotas(){
                 <Route exact path="/favoritos" element={<Favoritos/>} />
                 <Route exact path="/perfil" element={<Perfil/>} />
                 <Route exact path="/enderecos" element={<Enderecos/>} />
+                                
                 <Route exact path="/pesquisa" element={<Pesquisa/>} />
-                <Route exact path="/cardapio" element={<Cardapio/>} />  
+                <Route exact path="/cardapio" element={<Cardapio/>} /> 
+
                 <Route exact path="/login" element={<Login/>} />                                         
+                <Route exact path="/cadastro" element={<Cadastro/>} />
             </Routes>
         </BrowserRouter>
     </>
