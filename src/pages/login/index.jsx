@@ -2,6 +2,7 @@ import './style.css';
 import Logo from '../../assets/logo-pb.png';
 import Fundo from '../../assets/fundo-login.jpg';
 import { Link } from 'react-router-dom';
+import SaltPassword from '../../services/md5';
 
 function Login(){
     return <div className="row">
